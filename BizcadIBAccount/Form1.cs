@@ -51,7 +51,7 @@ namespace BizcadIBAccount
         private void ProcessHtmlFiles()
         {
             List<DailyActivityTrade> trades = new List<DailyActivityTrade>();
-            DirectoryInfo dir = new DirectoryInfo(@"I:\Dropbox\ProWin16\InteractiveBrokers\");
+            DirectoryInfo dir = new DirectoryInfo(@"C:\Users\bizca\OneDrive - Bizcad Systems\ProWin16\InteractiveBrokers\");
             IEnumerable<FileInfo> files = dir.GetFiles("*Trade*").OrderBy(f => f.CreationTime);
             int tradeid = 1;
             foreach (var fileinfo in files)
